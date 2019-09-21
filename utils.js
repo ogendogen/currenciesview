@@ -5,7 +5,7 @@ function requestAPI(baseCurrency, targetCurrency)
     var strReturn = "";
 
     jQuery.ajax({
-        url: "http://localhost/gavapi.php?base=" + baseCurrency.toString() + "&target=" + targetCurrency.toString(),
+        url: "http://185.61.138.154/currencies/gavapi.php?base=" + baseCurrency.toString() + "&target=" + targetCurrency.toString(),
         type: "GET",
         cache: false,
         success: function(html) {
